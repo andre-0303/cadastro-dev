@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <section class="container vw-100 py-5">
+      <h1 class="text-center text-success fs-2 mb-2">Cadastro de Dev</h1>
+      <form class="container w-25 border border-light py-3" method="POST" action="./processar_form.php">
+
+        <div class="mb-3">
+          <label for="exampleInputNome1" class="form-label">Nome:</label>
+          <input type="text" class="form-control" id="exampleInputNome1" name="nome" aria-describedby="nomeHelp" placeholder="Digite seu nome" style="background-color: #20c9964b;" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Digite seu email" style="background-color: #20c9964b;" required>
+        </div>
+
+        <select class="form-select mb-4 b" name="linguagem" aria-label="Default select example" required>
+          <option selected>Selecione uma Linguagem</option>
+          <option value="JavaScript" style="background-color: #20c9964b; color: white;">JavaScript</option>
+          <option value="Java" style="background-color: #20c9964b; color: white;">Java</option>
+          <option value="PHP" style="background-color: #20c9964b; color: white;">PHP</option>
+          <option value="Kotlin" style="background-color: #20c9964b; color: white;">Kotlin</option>
+          <option value="C" style="background-color: #20c9964b; color: white;">C</option>
+          <option value="C++" style="background-color: #20c9964b; color: white;">C++</option>
+          <option value="C#" style="background-color: #20c9964b; color: white;">C#</option>
+          <option value="Python" style="background-color: #20c9964b; color: white;">Python</option>
+          <option value="Ruby" style="background-color: #20c9964b; color: white;">Ruby</option>
+        </select>
+
+        <div class="form-check form-check-inline">
+          <h5 style="font-size: 15px; margin-left: -20px;" >Senioridade</h5>
+          <input class="form-check-input" type="radio" name="senioridade" id="inlineRadio1" value="Junior" required>
+          <label class="form-check-label" for="inlineRadio1">Junior</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="senioridade" id="inlineRadio2" value="Pleno" required>
+          <label class="form-check-label" for="inlineRadio2">Pleno</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="senioridade" id="inlineRadio3" value="Sênior" required>
+          <label class="form-check-label" for="inlineRadio3">Sênior</label>
+        </div>  
+        <br><br>
+
+        <div class="form-check">
+          <h5 style="font-size: 15px; margin-left: -20px;">Desenvolvedor</h5>
+          <input class="form-check-input" type="radio" name="desenvolvedor" id="flexRadioDefault1" value="Front-End" required>
+          <label class="form-check-label" for="flexRadioDefault1">
+            Front-End
+          </label>
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="radio" name="desenvolvedor" id="flexRadioDefault2" value="Back-End" required>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Back-End
+          </label>
+        </div>
+
+        <button type="submit" class="btn" style="background-color: #20c9964b; color: white;">Enviar</button>
+      </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
